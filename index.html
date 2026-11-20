@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#080e1d">
+  <meta name="description" content="Something exciting is on the way. Our website is launching soon.">
+  <title>Coming Soon | Your Brand</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='17' fill='%230b1530'/%3E%3Cpath d='M16 43 29 17l7 13 12-9-9 26-9-13z' fill='%236be4c5'/%3E%3C/svg%3E">
+  <style>
+    :root{color-scheme:dark;--bg:#080e1d;--text:#f7faff;--muted:#a5b2c8;--mint:#6be4c5;--line:rgba(194,210,240,.17)}
+    *{box-sizing:border-box}
+    html{min-height:100%;scroll-behavior:smooth}
+    body{margin:0;min-height:100vh;min-height:100svh;overflow-x:hidden;background:var(--bg);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+    body::before{content:"";position:fixed;inset:0;z-index:-2;background:radial-gradient(ellipse at 78% 13%,rgba(43,105,161,.28),transparent 43%),radial-gradient(ellipse at 12% 86%,rgba(34,134,131,.18),transparent 45%),#080e1d}
+    body::after{content:"";position:fixed;inset:0;z-index:-1;opacity:.17;background-image:linear-gradient(rgba(255,255,255,.055) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.055) 1px,transparent 1px);background-size:48px 48px;mask-image:linear-gradient(to bottom,black,transparent 94%);pointer-events:none}
+    .layout{width:min(1120px,calc(100% - 48px));min-height:100svh;margin:0 auto;display:flex;flex-direction:column}
+    header,footer{display:flex;align-items:center;justify-content:space-between;gap:20px}
+    header{padding:38px 0}
+    .brand{display:inline-flex;align-items:center;gap:12px;text-decoration:none;color:var(--text);font-weight:800;font-size:1.04rem;letter-spacing:.035em}
+    .brand-mark{width:39px;height:39px;display:grid;place-items:center;border-radius:13px;background:linear-gradient(135deg,#123c54,#17635b);border:1px solid rgba(107,228,197,.4)}
+    .brand-mark svg{width:23px;height:23px}
+    .top-note{color:#b2c5d5;font-size:.84rem;letter-spacing:.02em}
+    main{flex:1;display:flex;align-items:center;justify-content:center;padding:58px 0 86px;position:relative}
+    .hero{max-width:790px;text-align:center;position:relative;z-index:1}
+    .eyebrow{display:inline-flex;align-items:center;gap:10px;padding:10px 17px;border:1px solid rgba(107,228,197,.23);border-radius:100px;background:rgba(35,111,102,.15);color:#9bf3db;font-size:.78rem;font-weight:750;letter-spacing:.16em;text-transform:uppercase}
+    .dot{width:8px;height:8px;border-radius:50%;background:var(--mint);box-shadow:0 0 17px rgba(107,228,197,.9)}
+    h1{margin:27px 0 22px;font-size:clamp(3.2rem,8vw,6.6rem);line-height:1.035;letter-spacing:-.067em;font-weight:850;text-wrap:balance}
+    h1 span{display:block;background:linear-gradient(100deg,#fff 5%,#a4c8ff 49%,#6be4c5 95%);-webkit-background-clip:text;background-clip:text;color:transparent}
+    .description{margin:0 auto;max-width:560px;color:var(--muted);font-size:clamp(1rem,2.3vw,1.2rem);line-height:1.85}
+    .separator{width:78px;height:1px;background:linear-gradient(90deg,transparent,var(--mint),transparent);margin:37px auto 28px}
+    .subtext{color:#bac6d9;font-size:.94rem;line-height:1.7}
+    .accent{color:var(--mint);font-weight:650}
+    .glow{position:absolute;width:min(560px,90vw);aspect-ratio:1;border-radius:50%;background:radial-gradient(circle,rgba(41,109,130,.14),transparent 67%);filter:blur(12px);pointer-events:none}
+    footer{padding:25px 0 34px;border-top:1px solid var(--line);color:#8394ae;font-size:.82rem}
+    footer .right{color:#a2b9cc}
+    @media(max-width:600px){.layout{width:calc(100% - 36px)}header{padding:24px 0}.top-note{font-size:.74rem}main{padding:45px 0 65px}h1{letter-spacing:-.055em}footer{align-items:flex-start;flex-direction:column;gap:8px}.description{line-height:1.7}}
+    @media(prefers-reduced-motion:no-preference){.dot{animation:pulse 2.4s ease-in-out infinite}@keyframes pulse{50%{box-shadow:0 0 2px rgba(107,228,197,.2);opacity:.7}}}
+  </style>
+</head>
+<body>
+  <div class="layout">
+    <header>
+      <!-- EDIT: Replace YOUR BRAND with your company or website name. -->
+      <a class="brand" href="/" aria-label="Your Brand home">
+        <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 30 30" fill="none"><path d="m3 23 9-18 6 11 9-7-7 17-8-10-5 7" stroke="#a9ffe7" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        <span>YOUR BRAND</span>
+      </a>
+      <span class="top-note">A new experience is on its way</span>
+    </header>
+    <main>
+      <div class="glow" aria-hidden="true"></div>
+      <section class="hero" aria-labelledby="headline">
+        <div class="eyebrow"><span class="dot" aria-hidden="true"></span> We're building something new</div>
+        <h1 id="headline">Something great<br><span>is coming soon.</span></h1>
+        <p class="description">We're putting the finishing touches on a better online experience. Our website will be launching soon, and we can't wait to share it with you.</p>
+        <div class="separator" aria-hidden="true"></div>
+        <p class="subtext">Stay close. <span class="accent">The best is yet to come.</span></p>
+      </section>
+    </main>
+    <footer>
+      <span>© <span id="year">2026</span> YOUR BRAND. All rights reserved.</span>
+      <span class="right">Made for what's next.</span>
+    </footer>
+  </div>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
