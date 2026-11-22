@@ -1,0 +1,92 @@
+.cms-announcement{background:#203d78;color:white;text-align:center;padding:12px 24px;font-size:1rem;line-height:1.6}
+.cms-announcement a{color:inherit;text-decoration:underline;text-underline-offset:4px}
+.cms-preview-banner{padding:12px 24px;background:#fff0c5;color:#3c321b;text-align:center;font-size:1rem}
+.cms-preview-banner a{color:inherit;text-decoration:underline}
+.cms-price{font-weight:750;color:#203d78;font-size:1.25rem}
+.collection-card figcaption p{font-size:1rem;line-height:1.6;margin-top:10px;color:#526986}
+.header nav .admin-login-link{border:1px solid #ffffff66;color:white}
+@media(min-width:901px){.header nav{flex-wrap:wrap;justify-content:flex-end;row-gap:6px}}
+.header { justify-content: center; padding-top: 12px; padding-bottom: 12px; }
+@media(min-width:901px){.header nav{justify-content:center}}
+@media(max-width:900px){.header{justify-content:flex-end}}
+
+/* The supplied landscape banner has clear space for the homepage copy. */
+.homepage.photo-home.red-photo-home .hero-luxe-banner {
+  max-width: none;
+  width: 100%;
+  background: #06172d;
+}
+.hero-luxe-banner .home-slider { background: #06172d; }
+.hero-luxe-banner .home-slider-frame {
+  position: absolute;
+  inset: 0;
+  background: #06172d;
+}
+.hero-luxe-banner .home-slide {
+  left: 42%;
+  width: 58%;
+  object-fit: contain;
+  object-position: right center;
+  background: #06172d;
+}
+.hero-luxe-banner .home-slide.hero-banner-photo {
+  left: 0;
+  width: 100%;
+  object-fit: cover;
+  object-position: center top;
+}
+.hero-luxe-banner .home-slider-frame::after {
+  background: linear-gradient(90deg, #06172d55, #06172d22 35%, #06172d00 65%);
+}
+.red-photo-home .hero-luxe-banner .hero-copy {
+  width: min(53%, 710px);
+  padding: 165px 28px 76px clamp(28px, 5.8vw, 90px);
+  color: #fff;
+}
+.hero-luxe-banner .hero-copy h1 { color: #fff; }
+.hero-luxe-banner .hero-copy h1 em { color: #f4dbac; }
+.hero-luxe-banner .hero-copy .eyebrow,
+.hero-luxe-banner .hero-copy .intro,
+.hero-luxe-banner .hero-copy .hero-caption { color: #edf3fc; }
+.hero-luxe-banner .hero-copy .intro {
+  font-size: 1.125rem;
+  line-height: 1.8;
+  max-width: 500px;
+}
+.hero-luxe-banner .hero-copy .primary {
+  background: #fff;
+  color: #203d78;
+  border-color: #fff;
+}
+.hero-luxe-banner .hero-copy .primary:hover { background: #edf3fc; }
+.hero-luxe-banner .hero-copy .text-link { color: #fff; }
+.hero-luxe-banner .home-slider-controls { left: 54%; }
+.hero-luxe-banner .home-slider-toolbar { max-width: calc(100% - 20px); }
+.hero-luxe-banner .home-slider-dot { width: 28px; }
+@media (min-width: 781px) and (max-width: 1050px) {
+  .red-photo-home .hero-luxe-banner .hero-copy { width: 57%; padding-top: 130px; padding-left: 32px; }
+  .homepage .hero-luxe-banner h1 { font-size: 3rem; }
+  .hero-luxe-banner .hero-copy .intro { font-size: 1rem; }
+}
+@media (max-width: 780px) {
+  .hero-luxe-banner .home-slider-frame {
+    position: relative;
+    inset: auto;
+    aspect-ratio: 1 / 1.05;
+  }
+  .hero-luxe-banner .home-slide { left: 0; width: 100%; object-position: center; }
+  .hero-luxe-banner .home-slide.hero-banner-photo { object-position: 77% top; }
+  .hero-luxe-banner .home-slider-frame::after {
+    background: linear-gradient(0deg, #06172d, #06172d00 36%);
+  }
+  .red-photo-home .hero-luxe-banner .hero-copy {
+    width: 100%;
+    margin-top: -28px;
+    padding: 0 24px 46px;
+  }
+  .hero-luxe-banner .hero-copy .intro { font-size: 1.125rem; }
+  .hero-luxe-banner .home-slider-controls { left: 0; }
+}
+@media (min-width: 600px) and (max-width: 780px) {
+  .hero-luxe-banner .home-slider-frame { aspect-ratio: 4 / 3; }
+}
